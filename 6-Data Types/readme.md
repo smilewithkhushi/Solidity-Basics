@@ -1,6 +1,5 @@
 # Solidity Data Types
-
-Solidity is a statically-typed programming language used for writing smart contracts on the Ethereum blockchain. It supports various data types to store and manipulate data. In this readme file, we will discuss the different data types available in Solidity.
+In this readme file, we will discuss the different data types available in Solidity.
 
 ## Integers
 
@@ -46,5 +45,55 @@ In Solidity, you can perform various operations on integers using different oper
     - Bitwise XOR (`^`): Performs a bitwise XOR operation between two integers.
     - Bitwise NOT (`~`): Performs a bitwise NOT operation on an integer.
 
-These operators allow you to perform various calculations and comparisons on integers in Solidity. Make sure to choose the appropriate operator based on your specific requirements.
+
+## Boolean
+The `bool` data type in Solidity represents a boolean value, which can be either `true` or `false`. It is used to store and manipulate logical values in smart contracts.
+
+### Declaration
+To declare a `bool` variable, you can use the following syntax:
+```solidity
+bool myBool = true;
+```
+
+### Operators for Booleans in Solidity
+In Solidity, you can perform logical operations on boolean values using different operators. Some of the commonly used operators for booleans in Solidity are:
+
+- Logical AND (`&&`): Returns `true` if both operands are `true`, otherwise returns `false`.
+- Logical OR (`||`): Returns `true` if at least one of the operands is `true`, otherwise returns `false`.
+- Logical NOT (`!`): Returns the opposite boolean value of the operand.
+
+These operators allow you to combine and manipulate boolean values based on logical conditions.
+
+### Comparison Operators
+You can also use comparison operators to compare boolean values in Solidity. The following comparison operators are available:
+
+- Equal to (`==`): Checks if two boolean values are equal.
+- Not equal to (`!=`): Checks if two boolean values are not equal.
+
+These comparison operators return a boolean value (`true` or `false`) based on the comparison result.
+
+### Conditional Statements
+Boolean values are often used in conditional statements to control the flow of execution in smart contracts. The most common conditional statements used in Solidity are:
+
+- If statement: Executes a block of code if a certain condition is `true`.
+- If-else statement: Executes a block of code if a certain condition is `true`, otherwise executes a different block of code.
+- Switch statement: Allows you to select one of many code blocks to be executed based on the value of a variable.
+
+These conditional statements help you make decisions and perform different actions based on the boolean values.
+
+### Example
+Here's an example that demonstrates the usage of the `bool` data type and its operators in Solidity:
+
+```solidity
+bool isApproved = true;
+bool isVerified = false;
+
+if (isApproved && !isVerified) {
+    // Execute some code if the condition is true
+} else {
+    // Execute some code if the condition is false
+}
+```
+
+In this example, the code inside the `if` block will be executed if `isApproved` is `true` and `isVerified` is `false`. Otherwise, the code inside the `else` block will be executed.
 
